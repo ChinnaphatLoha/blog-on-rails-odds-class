@@ -20,35 +20,39 @@ h1 {
 
 /* Hero Section */
 .hero-section {
-	background: linear-gradient(
-		135deg,
-		#343a40 0%,
-		#495057 100%
-	); /* Dark gradient for professionalism */
+	background: linear-gradient(135deg, #343a40 0%, #495057 100%);
 	color: white;
-	padding: 60px 20px; /* Increased padding for a more spacious feel */
+	padding: 60px 20px;
 	border-radius: 8px;
 	text-align: center;
 	margin-bottom: 20px;
 }
 
 .hero-content {
-	max-width: 600px; /* Limit width for readability */
+	max-width: 600px;
 	margin: 0 auto;
-
-	h2 {
-		font-size: 1.5rem;
-		margin-bottom: 16px;
-	}
 }
 
-/* Article Card Styling */
+/* Article Count Styling */
+.article-count {
+	font-size: 1.1rem;
+	color: #495057; /* Dark gray color for readability */
+	margin-bottom: 20px; /* Space below the count */
+}
+
+.article-count span {
+	font-weight: bold;
+	color: #007bff; /* Blue color for emphasis */
+}
+
+/* Articles List */
 .articles-list {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
 }
 
+/* Article Card Styling */
 .article-card {
 	padding: 16px;
 	background-color: #ffffff;
@@ -67,12 +71,12 @@ h1 {
 }
 
 .article-link {
-	color: #007bff; /* Use a blue color for links */
+	color: #007bff;
 	text-decoration: none;
 }
 
 .article-link:hover {
-	text-decoration: underline; /* Underline on hover for better indication */
+	text-decoration: underline;
 }
 
 .article-body {
@@ -84,25 +88,25 @@ h1 {
 .comment-count {
 	font-size: 0.85rem;
 	color: #888;
-	margin-top: 8px; /* Spacing for better readability */
+	margin-top: 8px;
 }
 
 /* New Article Button */
 .new-article-button {
 	display: inline-block;
-	margin-top: 20px; /* More space above the button */
+	margin-top: 20px;
 	padding: 12px 16px;
 	font-size: 1rem;
-	color: #e63946; /* Contrasting color for the button */
-	background-color: white; /* White background */
+	color: #e63946;
+	background-color: white;
 	text-decoration: none;
-	border-radius: 6px; /* Rounded corners */
+	border-radius: 6px;
 	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .new-article-button:hover {
-	background-color: #e63946; /* Red background on hover */
-	color: white; /* White text on hover */
+	background-color: #e63946;
+	color: white;
 }
 
 /* Responsive Adjustments */

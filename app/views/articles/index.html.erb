@@ -8,14 +8,19 @@
   </div>
 </div>
 
+<p class="article-count">Our blog has <span><%= Article.public_count %></span> articles and counting!</p>
+
 <div class="articles-list">
+  <h3>Your Today Reading List!</h3>
   <% @articles.each do |article| %>
-    <div class="article-card">
-      <h2 class="article-title">
-        <%= link_to article.title, article, class: "article-link" %>
-      </h2>
-      <p class="article-body"><%= article.truncated_body %></p>
-      <p class="comment-count"><%= pluralize(article.comments.count, "comment") %></p>
-    </div>
+    <% unless article.archived? %>
+      <div class="article-card">
+        <h2 class="article-title">
+          <%= link_to article.title, article, class: "article-link" %>
+        </h2>
+        <p class="article-body"><%= article.truncated_body %></p>
+        <p class="comment-count"><%= pluralize(article.comments.count, "comment") %></p>
+      </div>
+    <% end %>
   <% end %>
 </div>
