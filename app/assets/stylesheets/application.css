@@ -1,19 +1,70 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Mobile-First Design */
+body {
+	font-family: Arial, sans-serif;
+	padding: 16px;
+	background-color: #f8f9fa;
+}
+
+h1 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 16px;
+}
+
+/* Article List Styling */
+.articles-list {
+	list-style: none;
+}
+
+.article-link {
+	display: block;
+	padding: 12px;
+	margin-bottom: 8px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #e63946; /* Red primary color */
+	border-radius: 8px;
+	transition: background-color 0.2s ease;
+}
+
+.article-link:hover {
+	background-color: #d62828;
+}
+
+/* New Article Button */
+.new-article-button {
+	display: block;
+	margin-top: 20px;
+	padding: 12px;
+	text-align: center;
+	font-size: 1rem;
+	color: #ffffff;
+	background-color: #e63946; /* Red primary color */
+	text-decoration: none;
+	border-radius: 8px;
+	transition: background-color 0.2s ease;
+}
+
+.new-article-button:hover {
+	background-color: #d62828;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+	.articles-list {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
 
 .error-message {
-  color: red;
+	color: red;
 }
